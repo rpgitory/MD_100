@@ -1,0 +1,62 @@
+md 100 configuration authorization 
+
+- Modification of OS architecture enabled support for non-intel, processor-based devices. these includes with ARM-based processor
+- we can perform upgrade from windows 10 to 11 using service instead of the traditional upgrade method.
+
+- Availables features in windows 
+	: Start screen and start menu improvements
+	: Cloud Integration
+	: Snap layouts and snap groups
+	: Widgets
+	: Windows terminal app
+	: Chromium-based microsoft edge
+- Recovery tools
+	: Rest this PC - Introduced in windows 10
+	: Remove everything
+- Advanced start-up options 
+	: Use a device - with using USB drive, network connection or recovery disk
+	: Troubleshoot - enabled to access advanced options such as system restore, System image recovery, startup repair, command prompt, unified extensible firmware interface (UEFI) settings.
+- Virtulization 
+	: Client hyper-V - can use for multiple OS configuration and test IT environment.
+	: Windows sandbox -isolated environment for testing application. no need to download or create a separate VHD.
+- Mobility improvements 
+	: Support for multiple device types 
+	: Bring your own device support
+	: Mobile broadband
+	: Broadband tethering
+	: Autotriggered VPN
+-Security enhancements 
+	: Remote business data removal
+	: Improved biometrics 
+	: Pervasive device encryption
+	: Malware resistance	
+	: Device lockdown
+	: Virtual secure mode - virtulization container known as trustlet.
+	: Nearby sharing 
+
+Evaluate the benefits of windows 
+- Easier to use
+	: Tech support
+	: A consistent user interface
+	: Performance improvements
+- Continues updates
+- Improved device management - Microsoft endpoint management platform
+	: Microsoft Intune - More focused on MDM (Mobile Device Management) and MAM (Mobile Application Management)
+  	: Configuration manager
+	: Desktop analytics 
+	: Windows autopilot
+-Distributed of apps by using the Microsoft store
+- More secure
+
+Explain desktop management in an enterprise environment
+- by allowing user to manage their computers, these are problem that might occured
+	: Software update problem
+	: Anti-malware problems
+	: Application management
+	: Hardware support
+- Enterprises often use one or more standard operating environments (SOE). These are benefits of using SOE
+	: Simplified deploymemnt of new and replacement computers
+	: Consistent application and hardware
+	: Simplified inventory
+	: Simplified updating
+	: Simpler software deployment 
