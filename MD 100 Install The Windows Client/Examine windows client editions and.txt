@@ -1,0 +1,105 @@
+Examine windows client editions and requirements
+
+Windows edition			Audience		Availability
+Home 				Individual home		Everyone
+Pro			small and mid-sized business,	Everyone
+			advanced user
+Pro for Workstatios	User with advanced performace 	Everyone
+			and storage requirements 
+Enterprise		Large enterpise organizations	Available to volume License cutomers
+Enterprise LTSC 	Large enterprise organizations  Available to volume License cutomers
+			with retrictive change requirements
+Pro Education		Comparable to pro for school 	Available to academic volume license cutomers
+			staff, administrator, teachers, 
+			and students 
+Education 		Comparable to Enterprise for 	Available to academic Volume License customers
+			school staff, administrators, 
+			teachers, and students
+IoT Core/Enterprise	Fixed purpose and appliance  	Available through Windows IoT Distributors
+			devices
+
+- Home edition
+	: Windows hello
+	: Virtual Desktops
+	: Photos, Maps, Mail, Calendar, Music and Video, and other built-in App.
+	: Device enryption
+	: Firewall and virus protection
+	: Always on VPN
+	: New updates and features received automatically
+
+- Pro edition
+	: Bitlocker encryption for advanced user
+	: Windows autopilot
+	: Dynamic Provisioning 
+	: MDM
+	: Domain join - cutomer can join active directory domain
+	: Ability to join Azure Active Directory 
+	: Group policy management 
+	: Assigned Access
+	: Remote Desktop
+	: Client Hyper-V
+	: Microsoft store for business
+	: Windows update for business
+	: Enterprise Data Protection 
+	: Granular user-interface control
+	: Enterprise state roaming
+
+- Pro for workstations
+	: ReFS (Resilient File System) - ReFS provides cloud-grad resiliency for data on fault-tolerance storage spaces and managed large volumes.
+	: Persistent memory - support non-volatile memory modules (NVDIMN-N) when turning off the workstation, data and files in memory persist.
+	: SMB Direct -  SMB Direct supports network adapters that have Remote Direct Memory Access capability. SMB Direct offers improved performance when transferring large amounts of data on remote SMB file shares.
+	: Expanded Hardware Suppoer
+
+- Enterprise edition
+	: with built-in features with pro edition and some extra features like
+	: AppLocker
+	: Universal Print
+	: Start menu layout control	
+	: Microsoft Defender Credential Guard
+	: Microsoft Defender Application Control
+	: Microsoft Defender Application Guard
+	: Microsoft Application Virtualization (App-V)
+	: Microsoft User Experience Virtualization (UE-V)
+	: License rights
+	: Desktop Analytics	
+	: DirectAccess
+
+- Enterprise LTSC 
+	: Doen't receive feature upgrades 
+	: No Microsoft Edge browser (but can install)
+	: No Microsoft store client
+	: Many built-in universal windows apps are missing
+	: Every three year updates will release by Microsoft (Microsoft 2021, 21H2 current one)
+	: windows 11 LTSC isn't available yet
+
+- Pro education and Education
+	: Pro Education and Education offer the same features as Pro and Enterprise editions, respectively, except for the Long-Term Servicing Channel.
+	: These editions of Windows have configurations more suitable for school staff, administrators, teachers, and students. 
+	:Pro Education and Education editions are only available through academic Volume Licensing.
+
+- IoT Core / Enterprise 
+	: The IoT Edition of Windows is designed for fixed-purpose devices. Examples include automated teller machines, point-of-sale terminals, and industrial and medical devices. 
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Select a windows client eiditon
+
+32-bit and 64-bit editions
+	: windows 11 only available in 64-bit where windows is available for both 32 bit and 64 bit.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Examine windows hardware requirements 
+- Fetures-specific requirements 
+	: Windows Hello - Supports biometeric 
+	: 2FA
+	: Snap 
+	: Secure Boot
+	: DirectX	
+	: Bitlocker to GO
+	: Client Hyper-V
+	: Miracast / Windows Projection 
+	: Wi-Fi Directe Printing
+	: Instance Go
+	: DirectStorage
+- Check for Hyper-V
+	: type in cmd 'systeminfo' and if you get message like "Hyper-V Requirements: A hypervisor has been detected. Features required for Hyper-V will not be displayed." means you are enabled windows hypervisor.

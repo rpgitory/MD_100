@@ -1,0 +1,82 @@
+Upgrade and migrate windows clients
+
+- An in-place upgrade
+	: upgrade a operating system while retaining all the programs, programs settings, user-realted programs, and user data.
+	
+- Evaluate
+	: check minimum requirements meets with new upgradation version
+	: check application compaibility 
+	: drivers availables for new upgradation version
+
+- Backup 
+	: always have a backup if anything goes wrong so can come back to whatever it is.
+
+- Upgrade
+	: Run upgrade program or exe file.
+
+- Verify 
+	: verify all application, deivers, and other functionality 
+
+- Update
+	: check always for update 
+-S mode
+	: S mode is version of Win 10,11 that streamlined for security and performance while providing a familiar windows experience.
+	: S mode available to Home, Pro, and enterprise windows 10, you can switch out of S mode to Home, Pro, Education, or Enterprise but once compelted, you can't switch back without relaoding the OS.
+	: can switch to Microsoft store or Microsoft Intune
+	: S mode only available in windows 11 Home edition 
+
+- Restore 
+	: User State Migration Tool (USMT) to migrate user settings and application to old device to new device
+	: Can use oneDrive synchronize.
+- Side by side migration
+	: You configured a new device with fresh install of winodows using the organization typical method of OS deployment.
+	: Use USMT is used to migrate the user's data and settings to a migration store or directly to the target device.
+
+- In place migration
+	: Either upgrading new os or refreashing the existing os.
+
+- upgrade vs Migrate 
+"upgrade"
+
+Advantages 						Disadvantages
+Retains user settings, application settings,	Doesn't take advantage of the opportunity to start 
+and files with no additional effort.		fresh with standardized reference configurations, 
+						if these weren't used previously and adequately maintained.
+
+Preserves installed applications, and 		Small chance that preserved applications may not work
+typically doesn't require reinstallation 	correctly after upgrading from an older Windows version.
+of applications.
+
+Doesn't require extra storage space for 	Remnant files or settings from in-place upgrade may
+migration files.				contribute to performance and security issues.
+
+Affects user productivity minimally, 		Some upgrade paths may not be supported.
+and preserves user settings and data 
+as in the source computer.
+
+Provides a simpler setup process.
+
+Rollback is available if there was a problem.
+
+
+"Migration"
+
+Advantages 						Disadvantages
+Offers a fresh start with the opportunity to 	Requires the use of migration tools, such as USMT,
+clean up existing computers and create more 	to capture and restore user settings and data.
+stable and secure desktop environments, 
+a significant advantage when creating a 
+managed environment.
+
+Allows for installation of any edition 		Requires reinstallation of applications
+regardless of what edition was running 
+previously on the computers.
+
+Provides the opportunity to reconfigure		Requires storage space for user settings and files to be 
+hardware-level settings, such as disk 		migrated.
+partitioning, before installation.
+
+Viruses, spyware, and other malicious 		May have an impact on user productivity because of the
+software don't migrate to the new 		reconfiguration of applications and settings.
+installation of Windows.
+
