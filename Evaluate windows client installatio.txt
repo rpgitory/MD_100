@@ -1,0 +1,23 @@
+Evaluate windows client installation methods 
+
+- New deployments 
+	: Install Media - known as bare metal installation
+	: System Image 
+	: windows autopilot 
+
+- Provisioning
+	: can create a provisioning package with specific configuration and settings using the windows.
+	: This package can be applied to target windows 10 and later devices quickly.
+
+- Migration
+	: Side by Side migration
+		backup user settings and data on the source device to a secure location, usually on network
+		Perform a clean installation on the destination device.
+		Reinstall the apps on the destination device.
+		Restore user settings and data on the destination device.
+	: In place migration
+		called as wipe and load 
+
+- Identify the deployment scenario or scenarios
+	: New Device
+	: Replacement device
