@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d0648cf9-052e-4493-a609-e6a4e696e79e" name="Changes" comment="MD 100 Install The Windows Client">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MD_100.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Evaluate deployment methods.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Evaluate windows client installatio.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Examine windows client editions and.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Upgrade and migrate windows clients.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/md 100 Install the Windows Client.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2TMWSdCXeArJPxX7yIK3NfBNfdJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/Rhy/OneDrive/Onedrive/Desktop/Git/MD_100"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0648cf9-052e-4493-a609-e6a4e696e79e" name="Changes" comment="" />
+      <created>1690853433167</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1690853433167</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Evaluate windows client installation methods">
+      <option name="closed" value="true" />
+      <created>1690853563173</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690853563173</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Upgrade and migrate windows clients">
+      <option name="closed" value="true" />
+      <created>1690857273852</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690857273852</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Evaluate deployment methods">
+      <option name="closed" value="true" />
+      <created>1690863299780</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690863299780</updated>
+    </task>
+    <task id="LOCAL-00004" summary="MD 100 Install The Windows Client">
+      <option name="closed" value="true" />
+      <created>1690863516000</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690863516000</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Examine windows client editions and requirements" />
+    <MESSAGE value="Evaluate windows client installation methods" />
+    <MESSAGE value="Upgrade and migrate windows clients" />
+    <MESSAGE value="Evaluate deployment methods" />
+    <MESSAGE value="MD 100 Install The Windows Client" />
+    <option name="LAST_COMMIT_MESSAGE" value="MD 100 Install The Windows Client" />
+  </component>
+</project>
