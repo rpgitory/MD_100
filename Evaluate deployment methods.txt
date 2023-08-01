@@ -1,0 +1,98 @@
+Evaluate deployment methods
+
+- Modern 
+	: Windows Autopilot - reconfigure win 10, 11 devices effectively ahieving a customized new install with apps and settings alreadt configured
+	: In place upgrade - used windows setup to update your OS and migrate apps and settings
+
+- Dynamic 
+	: Subscription activation 
+	: Azure Active Directory and Mobile device management
+	: Provising packaging 
+
+- Traditional 
+	: Bare metal - fresh OS (Need to wipe everything)
+	: Refersh - called as wipe and load, redeploy a device by saving the user state, wiping the disk, then restoring the user state
+	: Replace - Same as bare metal with consideration for existing user data.
+
+- Autopilot 
+	: windows 10 first introduced autopilot feature 
+	: Motive of autopilot is reducing creating image method and deploying it.
+	:
+
+- High touch deployment 
+	: For small organization (0-100) who don't have much experience in IT or lack of IT staff.
+	: 
+
+- Lite touch deployment 
+	: suitable for medium size organization (200-500)
+	: Uses Microsoft deployment toolkit (MDT) or Microsoft intune 
+	
+
+- Zero touch deployment
+	: Suitable for large organization (>500).
+	: Microsoft intune & MDT (Microsoft deployment toolkit)
+
+- Windows assessment and deployment toolkit 
+	: Deployment Image Servicing and Management (DISM)
+	: Windows Imaging and Configuration Designer (Windows ICD)
+	: Windows System Image Manager (Windows SIM)
+	: User State Migration Tool (USMT)
+	: Volume Activation Management Tool (VAMT)
+	: Windows Assessment Services
+	: Windows Performance Toolkit (WPT)
+	: Application Compatibility Toolkit (ACT)
+	: Microsoft SQL Server 2012 Express.
+
+- Deployment Image Servicing and Management (DISM)
+	: command line tool for create and manage images.
+	: example of command `Dism /Capture-Image /ImageFile:"D:\Images\Fabrikam.wim" /CaptureDir:C:\ /Name:Fabrikam`
+
+- DISM Offline Servicing
+	: change image while they aren't in use, edit existing image, mount the image, make desired changes and then dismount the image.
+	: example 
+		`DISM /Mount-Image /ImageFile:C:\test\images\install.wim /MountDir:C:\test\offline
+		 DISM /Image:C:\test\offline /Add-Driver /Driver:C:\drivers\mydriver.inf
+		 DISM /Unmount-Image /MountDir:C:\test\offline /Commit`
+
+- Windows Imaging and Configuration Designer (windows ICD)
+	: Tools for design for assist with creation of provisional package.
+
+- Windows System Image Manager (Windows SIM)
+	: use to create unattended installation answer files (Unattend.xml) and distribute shares or change the files that a configuration set contains. 
+
+- Volume Activation Management Tool (VAMT)
+	: Automate and manage the activation of windows, windows server, and microsoft office.
+	: If you don’t use KMS, you can still manage your MAKs centrally with the Volume Activation Management Tool (VAMT).
+	: This tool can install and manage product keys throughout the organization. VAMT can also activate on behalf of clients without Internet access, acting as a MAK proxy.
+	: command `Get-VamtProduct`
+
+- Windows Preinstallation Environment (Windows PE)
+	: Windows PE is a minimal 32-bit or 64-bit operating system with limited services built on the Windows kernel.
+	: Windows PE replaces the DOS or Linux boot disks that were once used.
+	
+- Windows Deployment Services (WDS)
+	: enables the deployment of Windows operating systems. 
+	: Setup new client with a network-based installation without requiring administrator visit each computer or install directly 
+	
+- Microsoft Deployment Toolkit
+	: MDT is a free deployment solution from microsoft.
+	: Provides end-to-end guidance, best practices, and tools for planning, building, and deploying windows OS.
+	: Lite Touch: A stand-alone deployment solution.
+	: Zero Touch: An extension to System Center 2012 R2 Configuration Manager.
+
+- Identifying which components to migrate 
+	: User accounts
+	: Application settings
+	: Operating-System settings
+	: File types, Files, Folders, and Settings
+
+- Using USMT
+	: ScanState.exe - scans the source computer (collects file and settings and then create a store)
+	: localState.exe - migrates the files and settings (one at a time, from store to temporary location on the destination computer)
+
+- windows sandbox
+	: Pristine - every time windows sanbox runs, it's as clean as brand new installation of windows
+	: Disposable - Nothing Persist on the device. when sanbox is closed everything discarded.
+	: Secure - whatever happened it will within the sanbox
+	: Efficient - User integrated kernel schedualer, smart memory management,and virtual GPU.
+
