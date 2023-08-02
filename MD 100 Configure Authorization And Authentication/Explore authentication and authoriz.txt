@@ -1,0 +1,30 @@
+Explore authentication and authorization
+
+- Authentication -verify a user's identity
+- AUthorizattion -Determining whether a user has permission to access a resource
+- Access -Determining what actions a user can perform on resource based on the user's assigned permission levels
+
+- Windows authentication methods 
+	: Kerberos version 5 protocol - client-server sign-in authentication method
+	: NTLM - provide backward compatibility however not as secure as kerberos
+	: Certificate mapping - used in smart cards 
+
+- windows user type
+	: Local account
+	: Microsoft account
+	: Domain account
+
+- Manage local users and groups 
+	: locally store
+	: choose local user if you are not connecting the network domain.
+	: mostly used in home usage.
+
+- Default local user accounts 
+	: manage access to local client's resources based on rights and permissions.	
+	: Default local user created automatically 
+	: Default local user can't remove or deleted [default local user can't provide access to network issues]
+
+- Administrator
+	: Default admin account can't be deleted or locked out but it can be renamed and disabled.
+	: By default windows disabled built-in admin account and making memeber of default local account so local user have admin previliage.
+	: 
