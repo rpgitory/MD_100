@@ -27,4 +27,18 @@ Explore authentication and authorization
 - Administrator
 	: Default admin account can't be deleted or locked out but it can be renamed and disabled.
 	: By default windows disabled built-in admin account and making memeber of default local account so local user have admin previliage.
-	: 
+	
+
+- Credential manager
+	: windows credential manager will helps to maintain password.
+	
+Explore Windows hello
+- Using windows hello instead of password
+	: strong passwd can be difficult to remember, and often reuses password or multile sites.
+	: Server breaches can expose symmetric network credentials (passwords).
+	: Passwords are subject to replay attacks.
+	: Users can inadvertently expose their passwords due to phishing attacks.
+
+- windows hello with PIN
+- windows hello using biometrics
+- windows hello for business
