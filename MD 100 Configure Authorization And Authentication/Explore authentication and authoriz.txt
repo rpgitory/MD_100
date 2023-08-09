@@ -42,3 +42,24 @@ Explore Windows hello
 - windows hello with PIN
 - windows hello using biometrics
 - windows hello for business
+
+Configure password policies and user properties
+- In organization environment, passwd policy defined the configuration of user passwords.
+
+User Group policy to configure password polices
+
+- Password policy \ Enforce password history : user can't reuse passwd when it's enable [by default policy remember 24 passwords]
+- passoword policy \ Maximux password age : Longest time for available passwd [default value is 42 days]
+- passoword policy \ Minimum password age : Minimum amount of time that user must maintain passwd [default value is 1 day, This prevent user from cycling quickly through a list of passwd and defeating the password history requirement]
+- password policy \ Account threshold, complexity
+
+User account settings that can affect the sign-in process 
+- user logon name : username 
+- unlock account : if account is locked so user can click to unlock account checkbox
+- user must change password on next sign in : user must have to change passwd
+- user can't change passwd : user can't change it, This setting overrides any requirements to change a password in the domain password policy. You typically use this setting only for service accounts.
+- password never expires - user no need to change password.
+- account is disabled - user can't login upto some period like if user is on vacation or on holidys
+- smart card is required for interactive sign in - smart card used for accessing or sign-in 
+- account expires - there is a date which after account is expired or disabled.
+
