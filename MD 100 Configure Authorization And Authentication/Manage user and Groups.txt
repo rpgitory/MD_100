@@ -1,0 +1,94 @@
+Manage user and Groups
+
+Active Directory (AD)
+	: It is group of service which is responsible for identity-related management
+	: It used structure data stores the basic for a logic, hierachical organization of directory information, represented as objects.
+	
+Active Directory Domain Services (AD DS)
+	: Responsible for storing directory data and making this data available to network user and administrator.
+	: These object typically include shared resources such as server, printers, and the network user and computer accounts.
+	: AD DS is installed on one or more windows server with the domain controller role. admin managed AD DS objects using console app, such as Active directory.
+	: domain-joined - computer which managed by active directory called as domain joined.
+
+Azure Active Directory
+	: unlike AD DS there is no physical infrastructure to setup.
+	: admin can easily sign for Azure AD being configuring directory and joining devices to the doamin.
+	: easy to faciliate identity and authentication services to external resources, such as Microsoft 365, Microsoft Azure, Microsoft Dynamics CRM online, and so on.
+	
+Features of AD
+	: Password hash synchronization - on-premise user and cloud aren't synchronized via passwd instead of it synchronized with hashes.
+	: Pass-through athentication - 
+	: Federation integration - 
+	: synchronization - 
+	: Health Monitoring -
+
+
+Comparison between Active Directory Domian Services Vs Azure Active Directory 
+
+Chatacteristics of AD DS 
+	: Traditional deployment of windows server-based active directory on a physical or virtual server.
+	: only one component of the windows active directory suite of technologies 
+	: AD DS is true directory service with hierachical X.500-based structure.
+	: AD DS used DNS for lcoating resources such as domain controllers 
+	: For query and managed AD DS by using Lightweight Directory Access Protocol (LDAP) calls.
+	: AD DS primarily uses kerberos protocol for authentication
+	: AD DS uses Organizational Units (OUs) and Group Policy Objects for managements.
+	: AD DS includes computer objects, representing computer that join in active directory domain.	
+	: AD DS uses truts between domains for delegated management.
+
+Chatacteristics of Azure AD
+	: Azure AD is primarily an identity solution, and it's designed for internet-based applciations by using HTTPS (Port 80) and HTTPS (Port 443)
+	: Azure AD is a multi-tenant directory service.
+	: Azure AD user and groups are created in flat structure, and there are no OUs, GPOS.
+	: Azure can't use LDAP for managed query, instead of Azure AD use REST API over Http and Https.
+	: Azure does not use kerberos authentication, instead of use SAML, WS-Federation, and OpenID over https connect for authentication, and uses OAuth for organization.
+	: Azure AD includes federation service and many third-party service such as fb are federation with and trust Azure AD.
+
+Sign in to a domain
+
+AD DS Authentication
+	: sign in process authenticates both the computer and user accounts.
+	: At startup, a computer queries the configured DNS server to discover domain controller that are available to perform authentication. 
+	: If you don't configure the list of DNS servers on a Windows client computer appropriately, it can’t obtain a list of domain controllers. It may raise issues 
+		- 1. Authentication fails
+		- 2. Windows uses cached credentials 
+		- 3. Authentication is very slow but successful	
+Note : NetBIOS is a legacy session-management protocol that Windows 10 and later doesn't require.
+
+	: during sign in process windows assgins a security token to both computer and user as well.
+	: security token contains information such as list of groups of which the computer or user account is memeber.
+
+Note : To reauthenticate a computer, you must restart the computer. To reauthenticate the user account, the user must sign out and then sign in again. Typical reasons why AD DS authentication might fail are
+		- 1. Domain Controller unreachable 
+		- 2. Name resolution issues
+		- 3. Physical network issues
+
+Azure AD AUthentication
+Obviously, if users provide incorrect sign in information, authentication fails. Other reasons for failure include:
+	1. Name-resolution issues 
+	2. Internet connectivity isn't avaiable 
+	3. Synchronization issues between on-premised AD DS and Azure AD
+
+Managed users and group using active directory 
+	: Two forms of common security principals 
+		User Accounts
+		Computer Accounts 
+
+Active Directory groups
+Two types of groups in active directory 
+	- Distribution groups : Used to create email distribution lists
+	- Security groups : Used to assign rights and permissions
+		
+Note : Both distribution groups and security groups can be used as an email entity.
+
+
+Active Directory default security groups
+	: DnsAdmins
+	: Domain Admins
+	: Domain Computer 
+	: Domain User 
+	: Enterprise Admin 
+	: IIS_IUSRS - Built-in-group used by internet information services.
+	: Print Operators
+	: Remote Desktop User
+
