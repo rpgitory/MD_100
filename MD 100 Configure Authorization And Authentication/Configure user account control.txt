@@ -1,0 +1,42 @@
+Configure user account control
+
+Explore User account control
+
+	: UAC is a security feature that provides a way for users to elevate their status from a standard user account to an administrator account, without having to sign out or switch user profiles.
+
+
+Examine how UAC works
+	: Two types of user group in windows client 
+		1. Administrative user
+		2. Standard user
+	
+Standard user account permission task 
+	: Establish a local area network (LAN)
+	: Establish and configure a wireless connection
+	: Modify display setting
+	: User can't degragment the hard drive, but service does this on their behalf.
+	: Play CD/DVD media, Burn CD/DVD media
+	: Change the desktop background for the current user
+	: Open date and time in control panel, and change the time zone
+	: User remote Desktop to connect to another computer.
+	: Change a user's own account password.
+	: Configure battery power options.
+	: Configure accessibility options
+	: Restore a user's backup files
+	: Set up computer synchronization with a mobile device, including a smartphone, laptop, or personal digital assistant
+	: Connect and configure a bluetooth device.
+
+Admin account permission tasks
+	: Install and unintall application, driver
+	: Install and upgrade windows os
+	: Configure Parental Controls
+	: Install ActiveX control
+	: Open windows Defender Firewall in control panel
+	: Chang user's account type and other configuration setting like passwd, permissions and so on.
+	: Configure Remote Desktop Access
+	: Add, remove user account
+	: Schedual automated task
+	: restore system backups files
+	: Configure automatic updates
+	: Browse to another user's directory
+	
