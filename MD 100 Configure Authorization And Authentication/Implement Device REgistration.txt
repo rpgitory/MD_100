@@ -1,0 +1,52 @@
+Implement Device REgistration
+
+- Device Registration provide single-sign on (SSO) experience
+
+Understand the challenges to data access for multiple device types
+- New challeneges to IT department includes 
+	: Allowing user to work on device of their choice, while providing consistent access to corporate resource.
+	: Allowing user to access resources remote location, such as work-at-home
+	: Unifying the environment and providing unified application and device management of the company-owned and domain-owned devices along with BYOD device.
+	: Protecting company data, enforcing company policie and compliance requirement, and managing risks regardless from where data is accessed, or from which device.
+
+Explore the Microsoft device strategy framework
+- Device registration enables user to access internal comapny websites and company apps from devices without having to enter user credentials each time.
+
+- On your own
+	: emp provide their own devices, there are no security policy in place, no organization management, and any device acceptable. Very open approach and very risky 
+	
+- Bring your own device 
+	1. Bring your own unmanaged device : emp provide their own device, but as part of company policy, the company does not manage those devices, emp are responsible for managing company policy on their own device, put company in high risk
+	2. Bring your own managed device : Most traditional formate BYOD, emp provide own device and company enforce its policy to allow the devices to access company data, this device fully managed by company
+
+- Choose your own device (also called CYOD) 
+	: Company provides a device to emp so those emp can perform their job remotely, company allow emp to choose from list of approved devices that are fully compatible with company infrastructure.
+
+- Here's your own device
+	: Company has one device approved for the company's mobile platform and this device is provided to emp.
+
+Explore new device registration
+	: Device is associated with the user's account in the company directory
+	: Device object is created in AD DS.
+	: User-certificate is installed on the device
+- Device object in AD DS establishes a link between the user and the device Further communication with company resources 
+
+Scenario for using device registration
+	: many devices that emp used to access comapny data are company owned, and those devices usually are domain-joined. 
+	: environments that adopt the BYOD scenario are particularly suitable for the device registration feature. Using this feature user can access company resource by SSO method.
+
+Examine how device registration works 
+	- Registration in AD DS for non-domain joined device
+	- SSO for selected application and resources in company's internal network.
+
+	: By implementing the web application proxy component, you also can enable registered devices to access company resources from external networks such as the internet.
+
+Assess infrastructure requirements to support device registration
+	: Active Directory Environment - Device registration requires that you implement a domain environment. At least one domain controller must be running windows server 2012 or later, and the schema must be extended to the windows server 2012 R2 level.
+	: Public key infrastructure - rewuired PKI to deploy and proprerly configured. devices must trsut CA, which is true by default for domain-joined devices, but requires manual configuration on devices that are not domain memebers. 	
+	: AD FS - company must set up AD FS before user can use the device registration feature on their devices. 
+	: Device Registration Service - when you perform device registration, device registration service registers the device in AD DS. It also provide the certificate to the user who enables their device for device registration
+	: A DNS record for the host named Enterpriseregistration - The name Enterpriseregistration is mandatory, and you cannot change it. 
+	: Web Application Proxy - This is optional component that is not required when you enable device registration on devices that are connected to the company network. if else so, then you need web application proxy to connect with comapny network.
+	: A support operating system on the device - The deive that you want to enable for device registration must be running a supported OS. Currently, you can enable device registration only on devices that are running at least windows 8.1 or later. 
+
