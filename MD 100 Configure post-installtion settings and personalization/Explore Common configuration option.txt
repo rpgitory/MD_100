@@ -1,0 +1,83 @@
+Explore Common configuration options
+
+Customize the user interface
+	: pin to start 
+	: unpin from start
+	: Pin to the taskbar
+	: resize the tiles
+	: live tiles
+	: grouping tiles
+	
+Synchronizing settings
+	: windows can synchronized common settings across multiple devices.
+	
+- Setting that can be synchronized across devices includes
+	: passwords
+	: languages preferences
+	: ease of access
+	: microsoft edge browser settings
+
+Explore the action center
+	: The action center consolidate notification from the OS with shortcut tiles that enable you to perform daily or frequently accessed tasks. 
+
+Focus Assist
+- focus mode whenever it turn on it stop you to distract by notification until focus mode on.
+
+
+Examine the display options
+	- rearrange your display 
+	- identify 
+	- detect
+	- night light
+	- color profile
+	- HDR
+	- Change the size of text, apps, and other items 
+	- Resolution
+	- Orientation
+	- Multiple Display 
+	- Make this my main display 
+	- Apply 
+	- Advanced display settings
+	- Graphics settings
+	
+Evalute options for mobile devices
+- Action Center (Window key + A)
+	: Tablet mode
+	: Connect
+	: Note
+	: All settings
+	: VPN
+	: Quiet hours
+	: Location
+	: Battery usage
+	: Airplane mode
+	: Wifi & Bluetooth 
+
+COnfigure power plans
+- Power plans
+	: Balanced
+	: Power saver
+	: High Performace 
+- Configure options
+	1. Screen
+		: on battery power, turn off after
+		: when plugged in, turn off after 
+	2. Sleep
+		: on battery power, PC goes to sleep after
+		: When plugged in, PC goes to sleep after
+
+- Choose what the power buttons do 
+	: Turn on fast startup - save system information into a file it uses to start up when you reapply power
+	: Sleep - suspend power to the hard drive and display, but continues supplying to processor and memory 
+	: Hibernate - writes all activity in memory to a file and shuts down all power, but allows the file to reanimate memory with the same values once you supply power
+	: Lock - just locked screen
+
+Examine windows client privacy features
+- privacy control allow you to configure into your device	
+	: The location of the device 
+	: The device camera or microphone
+	: Access to your account information	
+	: Access to e-mail, contacts, calendar
+	: Phone calls, messages, and history	
+	: Which apps are allowed to continue running in background 
+	: Access to document, pictures, and videos libraries
