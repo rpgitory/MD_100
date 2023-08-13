@@ -1,0 +1,123 @@
+Explore advanced configuration methods
+
+Explore windows activation
+- Three main methods to activate windows
+	: Retail
+	: OEM - OEM system builder typically sell computer systems that include a custom build of windows. WE can perform OEM activation by associating the windows OS with the computer system BIOS, so you can't transfer this license to another computer
+	: Microsoft volume licensing
+
+you can check your windows activation by using this command : "cscript C:\windows\system32\slmgr.vbs -dli"
+
+
+
+MAK activation considerations
+	: MAK allowed permanent activation of computers isolated from the KMS or part of an isolated network that doesn't have enough computer to use KMS.
+- when selecting MAK activation these are the thing which should keep in mind
+	: MAK Independent - each computer required connect to microsoft independently[via internet login or telephone]. 
+	: MAK Proxy - this activation method enables centralized activation request on behalf of multiple computer with one connection to Microsoft.
+
+
+
+KMS activation considerations
+	: Installing a KMS host key on a Windows computer allows you to activate other computers running Windows clients against this KMS host.
+- when selecting KMS activation these are the thing which should keep in mind
+	: Client computer that aren't activated attempt to connect with KMS host every two hours.
+	: To stay activated, client computer must connect to KMS once in every 180 days
+	: After activation, client computer attempt to renew their activation every seven days. after each successful connection, the expiration extends to 180 days.
+	: KMS activation required at least 25 computers to run windows client for activation successful.
+	: Client computers connect to the KMS host for activation using anonymous remote procedure calls (RPCs) over TCP/IP and default port 1688.
+
+
+Active Directory-based activation considerations
+- it used for enterprise computer activations
+- these things keep in mind when doing active directory activation
+	: no need additional host server with active directory-based activation.
+		:- can't configure active directory based activation on read-only doamin controller.
+		:- can't use AD based activation with non-microsoft services.
+		:- to store activation objects, the AD schema must be at a windows server 2012 R2 or newer version.
+	: AD based activation is forest wide, only need to implement once, even if forest contains multiple domains.
+	: No threshold limits that must be met before computers can be activated by using AD based activation.
+
+Explain Group policy
+- Group policy object : it contains one or more than one policy settings that apply configuration settings for user.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Note :- group policy apply to AD DS sites, domains and organizational units (OUs). GPO can't be link to the default computers or user container in AD DS.
+:- GPOs can be used regardless of whether the machine is joined to a domain.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Group policy settings structure
+	: User setting - These type of settings modify the HKEY_CURRENT_USER hive of the registry.
+	: Computer settings - These type of settings modify the HKEY_LOCAL_MACHINE hive of the registry.
+
+Group Policy preferences 
+	: The key difference GPO setting and group policy preference is that the GPO setting is enforced and can't be changed outside of the GPO.
+
+Apply Group Policy Obejcts 
+- Group policy apply in order
+	: Local GPOs - from windows vista and newly has local GPO configured already
+	: Site GPOs - Policy that link to sites process next.
+	: Domain GPOs - policies that link to the domain process next there often are multiple policies at the domain level
+	: OU GPOs - These policies contains setting that are unique to the object in that OU. For example, sales user might have unique settings that are required. you can link policy to the sales OU to deliver those settings
+	: Child OU policies - Any policies that link to child OUs process last.
+
+Local GPOs
+	: Each windows has one local GPOs and you can create your own custom too.
+	: A local GPOs is the least influence object in an AD DS environment bcz GPOs assosiated with sites.
+	: in non-network environment and network environment does not have controller, local GPOs setting are important bcz GPOs don't overwrite them.
+	: system which has windows 7 or newer version of it 
+		- local group policy (contain the computer configuration settings)
+		- Administrator and non-Administrator Local group policy 
+		- User-specific Local Group Policy
+
+Domain GPOs
+	: You can use Group Policy in an AD DS environment to provide centralized configuration management.
+	
+Option for modifying group policy processing 
+	: Security filtering - Filter GPOs by specifi user
+	: Enforcement - 
+	: Block inheritance -
+
+Note: When a link is enforced and a lower-level OU blocks inheritance, the settings in the enforced GPO apply.
+
+Explore windows Powershell
+	: You can use powershell to connect with remote computers, provided remote management enabled.
+	: Script-based execution
+
+Using command line interface 
+	: including cmdlets (commands-lets), functions, and workflows. These commands are building blocks for piecing together and implementing complex, customized processes and procedures.
+	
+
+Windows powershell ISE (Integrated Scripting Environment)
+	: Can use script within the PowerShell ISE to construct and save.
+	
+Use windows powershell
+	: it is simpler like VB script
+	: Some common windows powershell drives are
+		1. The C drive is the local file system's C drive
+		2. The cert drive is the local certificate store
+		3. The ENV drive contains environmental variables that are stored in memory
+		4. The HKCU drive is the HKEY_CURRENT_USER portion of the registry
+		5. The HKLM drive is the HKEY_LOCAL_MACHINE portion of the registry
+		6. The Variable drive contains the variable that are stored in memory
+
+Cmdlets 
+	: Get - retieves data
+	: Set - Establishes or modify data
+	: New - Creates a new object
+
+Compatibility with command-line tools
+	: you can run ipconfig.exe file at windows powershell
+	
+Using windows Powershell for bulk operations 
+	: by using windows powershell variables, scripts, and system interoperability to encapsulate tedious and time-consuming management tasks into scripts or cmdlets that only take seconds to run.
+
+
+Deploy a custom start menu in windows 10
+- Full Layouts versus partial layouts
+	: when full layouts is there then layout is locked.
+	
+- Applying configuration :- once it configured then you need to do this three things for deploying
+	: Group Policy
+	: Windows Configuration Designer provisioning package
+	: Mobile device management
