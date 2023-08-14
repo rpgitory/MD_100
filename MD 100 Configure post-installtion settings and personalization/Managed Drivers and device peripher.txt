@@ -1,0 +1,43 @@
+Managed Drivers and device peripherals 
+
+- Examine device drivers
+- install driver manually 
+	: The hardware may be old and not available for windows update
+	: The hardware driver is only provided by the manufacture
+	: driver may be different then the one provided by windows.
+
+- A driver package is a set of files that make up a driver. A driver package includes
+	: The .inf file
+	: Any files that the .inf file reference
+	: The catalog (.cat) file that contains the digital signature of the device driver.
+
+Device manager
+	: Install and update device driver
+	: Disable or enable device
+	: Use the driver roll back feature
+	: Change resource that devices use, such as interrupt requests(IRQs)
+	: Troubleshoot device problems 
+	: View devices that are connected currently to your network, and the resouces that they're using.
+
+Printer port
+	: Windows automaticaly detect a printer port however it cannot detect a port if printer working on old port such as serial (COM), Parallel (LPT) ports or network printers.
+
+Understand type 3 and 4 printer driver
+	: In past type 3 printer driver customized by manufacture 
+	: Type 4 driver common use in windows for doing basic task, Common printing languages include PCL and PostScript or XPS.
+	: Type 4 printer drivers are typically delivered using Windows Update or Windows Software Update Services (WSUS). Unlike Type 3 drivers, Type 4 drivers don't download from a print server.
+	
+- Benefits of type 4
+	: Sharing a printer doesn't require adding extra drivers that match the client architecture.
+	: Support multiple printer models
+	: Driver files are isolated on a per-driver basis, which prevents potential driver file-naming conflicts.
+	: Driver package is smaller than type 3 and run faster than type 3
+	: Printer driver and the printer user interface can be deployed independently with Type 4 drivers.
+
+Managed client-side printing
+	: Changing printer properties, such as sharing, security, and advanced properties
+	: Selecting your default printer
+	: Viewing and managing your print queue
+	: Pausing or resuming a printer's operation.
+	: Pausing, resuming, restarting, or canceling prints jobs.
+	: Recordering print jobs in your print queue.
