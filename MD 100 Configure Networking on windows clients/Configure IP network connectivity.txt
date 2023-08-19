@@ -1,0 +1,22 @@
+Configure IP network connectivity
+
+- Explore windows network configuration
+From wifi or Ethernet 
+	: Change advanced sharing options - configure network discovery, file and print sharing, public folder sharing, media sharing options and encyrption used in these all.
+	: Launch the network and sharing option - configure most network settings
+	: Configure windows firewall - configure windows firewall rules
+From within wifi 
+	: View available networks
+	: View hardware properties
+	: Managed known networks 
+	: Configure hotspot 2.0 network
+
+- Explore IPv4 settings
+	: In conjunction with a subnet mask, the address identifies
+		- The computer's unique identity, which is the HOST ID
+		- The subnet on whcih the computer resides, which is the network ID
+
+Define subnet from IPv4 networks
+Explain public and private IP addressing 
+	
+	
