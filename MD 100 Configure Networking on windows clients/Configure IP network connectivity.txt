@@ -19,4 +19,55 @@ From within wifi
 Define subnet from IPv4 networks
 Explain public and private IP addressing 
 	
+- DHCP 
+	: Include resilience in your DHCP service design so that the failure of a single server does not prevent the service from functioning.
+	: Configure DHCP server carefully. If you made mistack it can affect the whole network.
+
+Examine tools for configuring network settings
+
+Note :- Functionality in the Windows PowerShell network-related cmdlets has largely replaced Netsh.
+
+- windows disgonose tools for network problems
+
+	: Event Viewer
+	: Windows network disgnostics 
+	: IPConfig
+	: Ping
+	: Tracert
+	: NSLookup	
+	: Pathping
+	: Windows PowerShell
+
+- Event Viewer
+	: windows records the event in an appropiate event log
+	: Event viewer can access the application security, setup, and system logs under the system logs the windows logs node.
 	
+- Windows network diagnostics 
+	: it presents a possible description of the problem and potential remedy.
+	
+IPConfig
+	: Display current TCP/IP network configuration
+	: IPConfig can use to refresh DHCP, and DNS settings. 
+	
+command			Description
+ipconfig /all 		View detailed configuration information.
+ipconfig /release	Release the leased configuration back to the DHCP server.	
+ipconfig /renew 	Renew the leased configuration.
+ipconfig /displaydns 	View the DNS resolve cache.
+ipconfig /flushdns 	Purge the DNS resolve cache.
+ipconfig /registerdns 	Register/update the client's host name with the DNS server.
+
+Ping
+	: It verify the ip level connectivity to another TCP/IP computer.	
+	: It sends and receive the ICMP (internet Control Message Protocol) packets.
+	
+Note :- Firewalls might block the ICMP requests. As a result, you might receive false negatives when using Ping as a troubleshooting tool.
+
+Tracert 
+	: It determines the path taken to a destination computer by sending ICMP echo requests. 
+	: This tool also determines which router has failed, and what the latency, or speed, is.
+	: These results might not be accurate if the router is busy, because the router will assign the packets a low priority.
+
+Pathping
+	: Quite same as Tracert however Pathping provides more detailed statistics on the individual steps, or hops, through the network.
+	: The command can provide greater detail because it sends 100 packets for each router, which enables it to establish trends.
