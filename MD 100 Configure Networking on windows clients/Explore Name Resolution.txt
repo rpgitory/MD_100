@@ -1,0 +1,22 @@
+Explore Name Resolution
+
+computer names
+	: NetBIOS name is a nonhierachical name that some older apps use.			
+	: NetBIOS can represents a single computer or a group of computers.
+	: NetBIOS first 15 characters used for specified computer's name and final sixteenth character to identify a resource or service on that computer. Ex  NYC-SVR2[20h].
+
+
+Methods for resolving names
+	: locate domain controller and global catalog servers 
+	: Resolve IP addresses to host names
+	: Locate a mail server for email delivery 
+Note :- If NetBIOS over TCP/IP is enabled, TCP/IP also uses NetBIOS name resolution methods when resolving single-label, unqualified host names.
+
+- Depending on the configuration, Windows resolves host names by performing the following actions:
+ 	: checking by whether the hostname is the same as local host name.
+	: Searching the DNS resolver cache which is populated from the local hosts file.
+	: Sending a DNS request to its configured DNS servers.
+Note :- Windows can use Link-Local Multicast Name Resolution for networks that do not have a DNS server.
+
+
+
