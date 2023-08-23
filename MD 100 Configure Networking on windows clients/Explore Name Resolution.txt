@@ -19,4 +19,32 @@ Note :- If NetBIOS over TCP/IP is enabled, TCP/IP also uses NetBIOS name resolut
 Note :- Windows can use Link-Local Multicast Name Resolution for networks that do not have a DNS server.
 
 
+- Structure of DNS
+	: DNS name space consists of both domains and sub-domains.
+	: A DNS zone is a specific portion of that namespaces that resides on a DNS server in zone file.
+	: DNS uses both reverse and forward lookup zones to satisfy name resoultion requests.
 
+- Forward lookup zones
+	: It capable of hosting a number of different record types. 
+	: A most common record type in forward lookup is "A record" also known as host record.
+	: A record is used when resolving a host name to an IP address. 
+	: A host record most command type DNS record
+	: SRV service record are used to locate domain controller and global catalog servers.
+	: MX mail exchange records are used to locate the mail servers responsible for a domain.
+	: CNAME Canonical name records resolve to another host name, also reffered as an alias.
+
+- Reverse lookup zones 
+	: It contains PTR records. 
+	: PTE records used to resolve IP addresses to host names.
+	: An organization typically has control over the reverse lookup zones for its internal network. However, some PTR records for external IP addresses obtained from an ISP could be managed by the ISP.
+
+Troubleshoot name resolution
+	: IPConfig /flushdns or Clear-DnsClientCache [powershell]
+	: If ping command succeeds but failed with hostname then it may be a DNS problem
+	: Test-connection LON-cl1.adatum.com
+	: If the test is successful, the problem is likely unrelated to name resolution.
+	: If the test is unsuccessful, edit the C:\windows\system32\drivers\etc\hosts text file, and then add the appropriate entry to the end of the file. For example, add this line, and then save the file Ex "172.16.0.51 LON-cl1.adatum.com".
+	: Perform the test-by-host-name procedure again. Name resolution should now be successful.
+	: IPConfig /displaydns or Get-DnsClientCache [powershell]
+	: Remove the entry that you added to the Hosts file, and then clear the resolver cache once more. At the command prompt, type the following command, and then examine the contents of the filename.txt file to identify the failed stage in name resolution Ex "NSLookup.exe –d2 LON-cl1.adatum.com. \> filename.txt" or "Resolve-dnsname lon-cl1.adatum.com. \> filename.txt
+" [powershell]
