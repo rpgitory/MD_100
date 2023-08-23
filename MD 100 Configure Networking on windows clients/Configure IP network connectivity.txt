@@ -71,3 +71,32 @@ Tracert
 Pathping
 	: Quite same as Tracert however Pathping provides more detailed statistics on the individual steps, or hops, through the network.
 	: The command can provide greater detail because it sends 100 packets for each router, which enables it to establish trends.
+
+Examine IPv6 addressing
+	: Large address space
+	: Hierachical addressing and routing infrastructure
+	: Stateless and stateful address configuration 
+	: Required support for internet protocol security (IPsec) - The IPv6 required support for the authentication Header (AH) and encapsulating security payload (ESP) header that IPsec defines. Although IPsec does not define support for it's specific authentication methods and cryptographic algorithms, IPsec is defined from the start as the way to protect Ipv6 packets.
+Note :- IPsec provides for authentication and, optionally, encryption for communications between hosts.
+	: Restored end-to-end communication 
+	: Prioritized delivery
+	: Support for single-subnet environments
+	: Extensibility
+IPv address types
+	: Unicast
+	: Global unicast addresses - globally routable	
+	: Link-local addresses	
+		- IPv6 link-local addresses are equivalent to IPv4 APIPA addresses.
+		- Link-local addresses always begin with FE80.
+	: Unique local unicast addresses - Unique local addresses provide an equivalent to the private IPv4 address space for organizations, without the overlap in address space when organizations combine.
+	: Multicast 
+	: Anycast 
+	
+Explore IPv6 in windows client 
+	: windows uses IPv6 by default that includes some features
+		- shared transport and framing layer
+		- Shared filtering for firewall and IPsec
+		- Consistent performance, security, and support for both IPv6 and IPv4
+
+Direct Access use of IPv6 
+	: It enables to remote user to access corporate network anytime bcz it doesn't required virtual private network (VPN). 
