@@ -24,5 +24,3 @@ Examine wireless network technology
 	: Add an NFC smart tag to their printer, or purchase printers with NFC built in.
 	: Enable the following connection types to be used: Universal Naming Convention (UNC), Web Services on Devices (WSD), and Wi-Fi Direct.
 	: Optionally, use the PowerShell cmdlet Write-PrinterNfcTag to provision an NFC tag with information about a printer.
-
-Configure wireless display with miracast
