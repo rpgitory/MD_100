@@ -1,0 +1,28 @@
+Configure wireless connectivity
+
+
+Examine wireless network technology
+- wireless network topologies
+	: Infrastructure - it consist LAN and cellular networks, and require the use of device, such as access point (AP), to allow communication between client wireless devices.
+	: Ad hoc - It can connect wireless device dynamically in a peer-to-peer configuration without the use of any infrastructure devices.
+
+- wireless security
+	: WEP, WPA, WPA2, WPA3
+
+- wireless driver model 
+	: Windows 10 introduce a new wireless driver interface (WDI) driver model.
+	: A universal windows driver calls a subset of the interface that are available to a windows driver.
+	
+- Miracast
+	: It is a protocol that will transmit audio and video between devices via Wi-Fi it's peer-to-peer and uses wifi direct for the connection.
+	: it isn't necessary that both devices are connected to the internet. they only need to share the same local wireless network. The shared infromation send by the device via wifi through a wifi direct connection to a receiver connected to the display device. the receiver then decodes the video signal and passes it to the TV display.  
+	: Miracast support WPA2-PSK encryption.
+
+- Near field communication
+	: NFC is similar to bluetooth, but without the option to manually pair the communication is triggered due to physical proximity.
+	: NFC used short range radio waves for discovery and for transmistting data, and requires some form of NFC enabled hardware, such as a smart tag, sticker, key fob, or wallet card, which may also be located inside a laptop or table.
+	: Add an NFC smart tag to their printer, or purchase printers with NFC built in.
+	: Enable the following connection types to be used: Universal Naming Convention (UNC), Web Services on Devices (WSD), and Wi-Fi Direct.
+	: Optionally, use the PowerShell cmdlet Write-PrinterNfcTag to provision an NFC tag with information about a printer.
+
+Configure wireless display with miracast
