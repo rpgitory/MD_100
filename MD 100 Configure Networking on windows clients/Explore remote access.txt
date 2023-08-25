@@ -1,0 +1,29 @@
+Explore remote access
+
+Explore virtual private networks
+
+- Site to site VPN 
+	: It is also called as route to route VPN, that enables your organization to have routed connections between seprate offices or with other organizations over a public netwrok, while maintaining secure communications.
+	
+Properties of VPN connection
+	: Point to point tunneling Protocol
+	: Layer two tunneling protocol with IPsec (L2TP/IPsec)
+	: Secure socket tunneline protocol (SSTP)
+	: Internet key exchange verison 2 (IKEv2)
+
+Note :- An IKEv2 VPN provides resilience to the VPN client when the client either moves from one wireless hotspot to another or switches from a wireless to a wired connection. This ability is a requirement of VPN Reconnect.
+
+- Conditional access framework
+	: Can provide addtional security for your remote access connection by intergrating VPN with the Azure Active Directory (AD) conditional access framework.
+	: Conditional Access policies analyze signals such as user, device, and location to automate decisions and enforce organizational access policies for resources.
+	
+- common signals that conditional access framework has
+	: User or group membership 
+	: IP location information
+	: Device
+	: Application
+	: Real-time and calculated risk detection
+	: Microsoft defender for cloud app
+
+- Windows information protection
+	: 
