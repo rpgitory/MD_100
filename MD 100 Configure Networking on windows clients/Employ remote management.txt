@@ -10,5 +10,19 @@ Examine remote desktop
 	: Enter code that given by other party and let them give access of your computer.
 
 Examine remote desktop services 
+	: Remote desktop are well suitaed for single task workers.
 
 Note :- Standard users do not have the right to sign in to domain controller either locally or remotely. Being added Remote desktop user group on a domain controller does not change this.A standard user still needs to be given the right to sign in to a domain controller and must be added to the Remote Desktop Users group to connect to a domain controller remotely.
+	
+- Use remote commands in windows powershell
+	: Windows PowerShell remoting featurs are supported by the WS-Management protocol and the windows remote management (WinRM) service that implements WS-Management in windows.
+	
+- To verify the availability of WinRM and configure a PowerShell for remoting.
+	: Run powershell as administrator
+	: get-service winrm [to know whether service is running on or not]
+	: Enable-PSRemoting -force [To configure windows powershell for remoting]
+	
+
+Describe windows admin center
+	: It is new and locally deployed, browser-based management tool set that lets you manage widnows clients and servers remotely over https.
+	
