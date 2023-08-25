@@ -1,0 +1,14 @@
+Employ remote management
+
+Examine remote desktop
+
+- Using remote desktop with Azure AD-joined devices
+	: net localgroup "Remote Desktop Users" /add "AzureAD\\the-UPN-attribute-of-your-user"
+	: Can also add other Azure AD user to the admin group on a device and restric remote credentials to admin.
+	
+- Quick assistant 
+	: Enter code that given by other party and let them give access of your computer.
+
+Examine remote desktop services 
+
+Note :- Standard users do not have the right to sign in to domain controller either locally or remotely. Being added Remote desktop user group on a domain controller does not change this.A standard user still needs to be given the right to sign in to a domain controller and must be added to the Remote Desktop Users group to connect to a domain controller remotely.

@@ -41,4 +41,12 @@ Note :- An IKEv2 VPN provides resilience to the VPN client when the client eithe
 	: Admin configure routing policy to determine when the client should direct traffic over the VPN. policy can be based on user, hardware, or software criteria.
 
 - Always on VPN and direct access
+	: Always on VPN is a successor of direct access.
+	: Microsoft recommends migrant to always on VPN bcz always on VPN can use IPv4 and IPv6 both while direct access uses Ipv6 only.
+	: Always on VPN has more features than direct access
+	: Always on VPN support in windows 10 and later on updates as well where direct access supports windows 8.1
+	
+- Configuring client for always on VPN
+	: It can configure through ProfileXML.
+	: ProfileXML is uniform resource identifier (URL) node within the VPNv2 configuration service provider (CSP). 
 	: 
