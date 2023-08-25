@@ -26,4 +26,19 @@ Note :- An IKEv2 VPN provides resilience to the VPN client when the client eithe
 	: Microsoft defender for cloud app
 
 - Windows information protection
+	: It is another protection feature which includes (Bitlocker, drive encryption, applocker, and microsoft azure rights management)
+	: with new VPNv2 configuration service provider, you have new ability to use an MDM solution VPN profiles on managed devices. 
+	
+- Additional remote access usability improvements 
+	: Always On
+	: App-triggered VPN
+	: Traffic filters
+	: LockDown VPN
+	
+- Describe always on VPN
+	: Always on vpn provides a more seamless experience for end user.	
+	: It support remote access, domained-joined, nondomain-joined, or Azure AD-joined, and personally own devices.
+	: Admin configure routing policy to determine when the client should direct traffic over the VPN. policy can be based on user, hardware, or software criteria.
+
+- Always on VPN and direct access
 	: 
