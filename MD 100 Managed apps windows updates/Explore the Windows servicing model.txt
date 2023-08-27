@@ -1,0 +1,52 @@
+Explore the Windows servicing model
+
+Examine the windows servicing model
+	: Feature updates that install the latest new features, experiences, and capabilities on devices that are already running Windows 10 and later. 
+	: Quality updates that focus on the installation of security fixes and other important updates.
+
+Explore the windows client servicing channels
+- windows servicing channel	
+	: Windows insider program - For many IT pros, gaining visibility into feature updates early—before they’re available to the General Availability Channel.
+	: General availability channel - feature updates are available as soon as Microsoft releases them.
+	: Long-Term Servicing Channel - control medical equipment, point-of-sale systems, and ATMs—often require a longer servicing option because of their purpose.
+
+Examine the windows update options
+- servicing tools	
+	: Windows update
+	: Windows server update services (WSUS)
+	: Windows update for business
+	: Configuration manager
+
+- Rolling back upgrades
+	: There is a default 10-day grace period to roll back to the previous version, however this can be changed with the DISM image tool. 
+	: When rolling back, any changes will be lost, including installed apps, and it’s recommended that user data be backed up prior to a rollback.
+
+Knowledge Check
+
+1. Your organization has a number of custom applications. You need additional time to test application compatibility before deployment of the next Windows build. Which Windows servicing option provides the ability to do this? 
+A. Windows Insider Program
+B. General Availability Channel
+C. Long-Term Servicing Channel
+
+Ans A =  For many IT pros, gaining visibility into feature updates early—before they’re available to the General Availability Channel—can be both intriguing and valuable for future end-user communications as well as provide the means to test for application compatibility and any other issues on the next General Availability Channel release. Feature flighting enables Windows Insiders to consume and deploy preproduction code to their test machines, gaining early visibility into the next build.
+
+2. Contoso recently deployed the latest upgrade to the Windows operating system. However, the company later discovered a significant compatibility issue between the latest Windows upgrade and one of their Sales apps. Contoso wants to roll back this upgrade to the previous Windows operating system version. By default, what's the default grace period that Contoso has to roll back to the previous Windows version? 
+A. 10 days
+B. 20 days
+C. 30 days
+
+Ans A = With Windows, you can roll back an upgrade to the previous Windows operating system version. This can be helpful if unforeseen circumstances occur after updating. There is a default 10-day grace period to roll back to the previous version, however this can be changed with the DISM image tool. When rolling back, any changes will be lost, including installed apps, and it’s recommended that user data be backed up prior to a rollback.
+
+3. Which Windows Service Channel isn't intended for deployment on most or all the PCs in an organization and should only be used for special-purpose devices? 
+A. Windows Insider Program
+B. Long-Term Servicing Channel
+C. General Availability Channel
+
+Ans B = Windows Enterprise LTSC is a separate Long-Term Servicing Channel version. Long-term Servicing channel is not intended for deployment on most or all the PCs in an organization; it should be used only for special-purpose devices. As a general guideline, a PC with Microsoft Office installed is a general-purpose device, typically used by an information worker, and therefore it is better suited for the General Availability channel.
+
+4. As the Desktop Administrator for Fabrikam, Holly Spencer wants to obtain the updates that Windows Update determines are applicable to the devices at Fabrikam, perform additional testing and evaluation on the updates, and select the updates that Fabrikam wants to install. Which Microsoft feature provides Holly with this functionality? 
+A. Windows Update for Business
+B. Windows Server Update Services
+C. Configuration Manager
+
+Ans B =  Windows Server Update Services (WSUS) provides extensive control over Windows updates and is natively available in the Windows Server operating system. In addition to the ability to defer updates, organizations can add an approval layer for updates and choose to deploy them to specific computers or groups of computers whenever ready. WSUS also provides IT administrators with an all or nothing way to specify when they want an approved update to be installed. Because IT administrators ultimately select and install most updates identified by Windows Update, the role of WSUS in many enterprises is to provide IT administrators with the additional time they need to gain confidence in the quality of updates prior to deployment.
