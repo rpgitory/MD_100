@@ -1,0 +1,80 @@
+Provide apps to users
+
+Explore types of windows apps
+	: Desktop apps 
+	: Universal windows platform (UWP)
+	
+Desktop apps
+	: It is traditional app, referred as win32 apps.
+	: Microsoft store is most common way to find UWP apps.
+	: Launching an .exe or .msi file from either product media, network location share, or downloaded from a website.	
+	: As a package distributed from application management solution such as Endpoint Configuration Manager, typically used to automate & manage installations in an organization.
+
+Universal windows platform apps 
+	: More secure 
+	: Cross-device windows support
+	: Easy distribution
+	: Private distribution
+	: UWP apps are packaged in the .appx file
+
+App-V apps
+	: App-V apps used to deliver win32 apps virtually to clients - either automatically, or on-demand. unlike UWP or desktop app, app-v application is never installed on the client OS.
+	: Run multiple versions of applications
+	: Minimize application conflict 
+	: Simplify application removal 
+	: Simplify application upgrades 
+	
+RemoteApp apps 
+	: Windows server RemoteApp apps display locally but run remotely.
+	: Instead of apps being installed on the client, they are only installed on a server.
+	: Insufficient client hardware 
+	: Incompatible OS
+	: BYOD scenarios
+
+Examine methods for developing desktop apps
+	: Manual installation
+	: Group policy 
+	: Microsoft Endpoint configuration manager 
+	: Microsoft Intune 
+	: Virtualzed applications
+	: Remote application
+	: Inclusion in a windows OS image.
+	
+The windows installer service
+	: MSI file similar to Exe files, 
+	: windows always use windows installer open MSI files and install the program they contain, however vendor already made apps available in the MSI format.
+	
+Setup.exe files compared to MSI files
+	: An exe file provides user with more control over the installation process
+	: An exe file actually triggered one or more MSI files
+	: An exe files does all this checking and abstract away from some of the complexity of installing your program.
+	: With an exe file, you can optionally build a custom UI
+	
+Primary advantage of using MSI files manifest when apps are uninstalled 
+	: No leftover artifacts when uninstalling apps that were installed using an MSI package.
+
+
+Automate desktop app installation
+	
+- Automating installation by using group policy 
+	: Group policy software deployment enables you to deploy desktop apps in the windows installer .msi file format to computer that belong to an Active Directory domain service.
+	
+some GPO requirement 
+	: The target computers must belong to an AD DS domain.
+	: You must package the software in the windows installer .msi file format.
+	: User and computer accounts can be the target of an app deployment.
+	: You can target a deployment at the domain level, the site level, or the organization unit (OU) level.
+	
+Group Polocy software deployment types
+	: Assign
+	: Publish
+	
+
+Group Polocy software deployment drawbacks
+	: It can be difficult to determine whether a deployment is successful
+	: There is no prerequisit checking
+	: There is no installation schedule
+
+- Automatinf installation by using MDT
+	: Use the Windows Deployment Wizard to deploy the operating system and required apps. After deployment, capture the reference computer as an image.
+	: 
