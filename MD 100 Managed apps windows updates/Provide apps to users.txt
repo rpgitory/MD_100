@@ -75,6 +75,9 @@ Group Polocy software deployment drawbacks
 	: There is no prerequisit checking
 	: There is no installation schedule
 
-- Automatinf installation by using MDT
-	: Use the Windows Deployment Wizard to deploy the operating system and required apps. After deployment, capture the reference computer as an image.
-	: 
+- Installtion by using endpoint configuration manager
+	: collections - you can create a collection that includes only the computers that are located at a specific site with a certain deployed app and a specific piece of installed hardware.
+	: Multiple deployment types - you can configure an app to install locally if a user is logged on to his or her primary device, but to stream as an App-V app if the user is logged on to another device.
+	: Reporting 
+	: Wake on LAN (WOL) - WOL functionality allows you to schedule app deployment to occur after normal business hours.
+	: Software inventory, software meeting, and asset intelligence
