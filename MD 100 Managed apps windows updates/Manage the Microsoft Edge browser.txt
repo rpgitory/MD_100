@@ -109,7 +109,7 @@ Ans C
 
 5. Microsoft Edge provides a side panel that allows you to add pages or drag objects into the panel. This panel allows you to organize and share content that you find across the web. That's this feature? 
 A. Pinned tabs
-B. Pivot between profiles
+B. Pivot between prosfiles
 C. Collections
 
 Ans C.
