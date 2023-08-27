@@ -1,0 +1,107 @@
+Update windows clients
+	
+Examine windows update settings in windows clients
+	: checks for update
+	: Update history 	
+	: Change active hours
+	: Restart options
+	: Receive updates for other Microsoft products when i update windows
+	: Pause updates
+	: Defer feature updates
+	: Choose when updates are installed 
+
+- From delivery optimization tab
+	: Allow downloads from other PCs
+		- PCs on my local network
+		- PCs on my local network, PCs on the internet
+
+Use a WSUS server to deploy updates
+	: In the simplest configuration, a small organization can have a single WSUS server that downloads updates from the Microsoft Update website.
+	
+- The WSUS update management process
+	: Acces
+	: Identify
+	: Evalute and plan
+	: Deploy
+
+Update clients using windows update for business
+	: The creation of deployment rings, where administrators can specify which devices go first in an update wave, and which ones will come later (to ensure any quality bars are met).
+	: Selectively including or excluding drivers as part of Microsoft-provided updates.
+	: Integration with existing management tools such as Windows Server Update Services (WSUS), Configuration Manager, and Microsoft Intune.
+	: Peer-to-peer delivery for Microsoft updates, which optimizes bandwidth efficiency and reduces the need for an on-site server caching solution.
+
+Windows update for business provides some types
+	: Feature updates
+	: Quality updates - traditional OS update, typically released the second Tuesday of each month (though they can be released at any time). 
+	: Driver updates 
+	: Microsoft product updates - Windows Update for Business. Product updates are off by default. You can turn them on by using Windows Update for Business policies.
+
+Defer an update
+	: Feature updates - Max defer period 365 days
+	: Quality updates - Max defer period 30 days 
+
+Use Group Policy Settings to Configure Windows Update
+	: Group Policy enables policy-based administration using Microsoft Active Directory directory services (AD DS).
+	: Policy settings are created using the Microsoft Management Console (MMC) snap-in for Group Policy – GPMC.msc.
+	: Configure Automatic Updates. 
+		2 - Notify for download and notify for install
+		3 - Auto download and notify for install. 
+		4 - Auto download and schedule the install.
+		5 - Allow local admin to choose setting.
+	: Specify intranet Microsoft update service location.
+		- Server from which the Automatic Updates client detects and downloads updates
+		- Server to which updated workstations upload statistics
+	: Do not connect to any Windows Update Internet locations. 
+		- Do not include drivers with Windows Updates.
+		- Specify deadline before auto-restart for update installation.
+	: Turn off auto-restart for updates during active hours. 
+	: Windows update for business
+		- Select when Preview Builds and Feature Updates are received.
+		- Select when Quality Updates are received. 
+	: Toggle user control over Insider builds.
+	: Allow Telemetry -  This policy setting determines the amount of diagnostic and usage data reported to Microsoft.
+	: Disable pre-release features or settings.
+	: Download Mode.
+	: Group ID
+		- Limit the number of devices participating in peering in a domain network with many users.
+		- Create a single group for Local Network Peering for branches that are on different domains or aren't on the same network address translation (NAT).
+	: Max Upload Bandwidth
+	: Max Cache Size
+	: Mac Cache Age
+
+Knowledge Check
+
+1. Which of the following items identifies the four phases in the Windows Server Update Services (WSUS) update management process? 
+A. Identify, Evaluate and plan, Deploy, Support
+B. Assess, Evaluate and plan, Identify, Deploy
+C. Assess, Identify, Evaluate and plan, Deploy
+
+Ans A =  The goal of the assess phase is to set up a production environment that supports update management for routine and emergency scenarios. During the identify phase, you identify new updates that are available, and determine whether they are relevant to your organization. After you identify the relevant updates, you need to evaluate whether they work properly in your environment. After you have thoroughly tested an update and determined any dependencies, you can approve it for deployment in the production network.
+
+2. As the Desktop Administrator for World Wide Importers, Alan Deyoung wants to configure each individual computer with specific Windows Update settings. Doing this manually would be very time consuming, so Alan plans to create a Group Policy Object (GPO) to configure the necessary settings. After creating the GPO, what must Alan use to apply those settings to the appropriate collection of computers? 
+A. Active Directory Domain Services
+B. Configuration Manager
+C. Microsoft Endpoint Manager
+
+Ans A =  To configure each individual computer with specific Windows Update settings would be very time-consuming. Fortunately, you can create a Group Policy Object (GPO) to configure the necessary settings, and then use Active Directory Domain Services (AD DS) to apply those settings to the appropriate collection of computers.
+
+3. As the Desktop Administrator for Contoso, Holly Dickson wants to use Windows Update for Business to manage which Windows Updates are received when, as well as the experience a device has when it receives them. Holly wants to specify which devices go first in an update wave, and which ones will come later. This design will help Holly ensure that all quality bars are met. What must Holly do to support this update plan? 
+A. Implement peer-to-peer delivery for Microsoft updates
+B. Integrate Windows Update for Business with Microsoft Intune
+C. Create deployment rings
+
+Ans C = Deployment rings enable administrators to specify which devices go first in an update wave, and which ones will come later (to ensure any quality bars are met).
+
+4. As the Windows Update for Business administrator at Contoso, you want to defer the installation of both feature and quality updates from deploying to devices within a bounded range of time from when those updates are first made available on the Windows Update service. You want to use this deferral to allow time to validate deployments as they are pushed to devices. What's the maximum deferral period for quality updates? 
+A. 30 days
+B. 180 days
+C. 365 days
+
+Ans A = The maximum deferral period for quality updates is 30 days. The maximum deferral period for feature updates is 365 days.
+
+5. Your organization requires that updates are controlled and deferred. You want to utilize the service updates with Windows. Which servicing tool will allow you to perform centralized management using Group Policy or Microsoft Intune? 
+A. Windows Update
+B. Windows Update for Business
+C. Windows Server Update Service
+
+Ans B = You can use Group Policy or MDM solutions such as Intune to configure the Windows Update for Business settings that control how and when Windows devices are updated. In addition, by using Intune, organizations can manage devices that are not joined to a domain at all or are joined to Microsoft Azure Active Directory (Azure AD) alongside your on-premises domain-joined machines.
