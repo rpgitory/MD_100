@@ -1,0 +1,115 @@
+Manage the Microsoft Edge browser
+
+- Examine the Microsoft Edge browser
+	: Collections - It allow you to easily collect, organize and share content that you find across the web.	
+	
+- Pivot between profiles
+	: It allows you to easily switch ceredential when you want to change your experience on different devices. 
+
+- Immgersive Reader (Reading View)
+	: To enable view press hotkey F9
+	
+- Additional new or improved features
+	: Better accessibility features
+	: Improved battery life
+	: Better browsing experience in popular websites as a result of improved HTML5 compatibility and now based on Chromium.
+	: Improved security by using kernel attack protection, which makes attacks on the kernel less successful.
+	: Better management of favorites including creating folders for favorites and importing favorites from other browsers.
+	: Compatible sites can use Windows Hello to improve user authentication for a faster sign in experience.
+
+
+Configure Microsoft Edge
+	: You can set Group Policy Object (GPO).
+
+- Install the Microsoft Edge administrative templates
+	: To configure Microsoft Edge with GPO you first install the administrative template (ADMX files) that add rules and settings for Microsoft Edge to the group policy central store in your AD DS or the definition template folder on individual computers.
+	: There are two admin templates for Microsoft Edge 
+		1. msedge.admx = contains default home page URL, Settin connections to default to HTTPS, Allowed Extensions
+		2. msedgeupdate.admx = contains How often automatic update checks are performed, changing the update channel, address or URL of a proxy server.
+
+- Setting mandatory and recommended policies
+	: It support both mandatory and recommended policies
+	: Mandatory policies override user preferences and prevent the user from changing it, while recommended policies provide a default setting that may be overridden by the user. 
+	
+- Verifying applied policies 
+	: Edge://policy
+
+
+Examine privacy features in Microsoft Edge
+- InPrivate browsing 
+	: InPrivate Browsing is a proactive feature that allows users to control what is tracked in a browsing session. 
+	: InPrivate Browsing is also useful when credentials are cached, and you wish to sign-in with different credentials without clearing the cached credentials.
+
+- Tracking protection
+	: Tracking Protection monitors the frequency of all third-party content as it appears across all websites that a user visits. You can configure what level of tracking you want allowed, such as blocking trackers from sites you haven't visited, but allowing sites you frequent to track.
+	
+- Clearn browsing data
+	: Browsing history
+	: Download history 
+	: Cookies and other site data
+	: Cached images and files
+	: Passwords and autofill from data
+
+Managed Microsoft Edge extensions 
+	: Extensions add additional values and feature in your browser
+	
+Implement internet Explorer mode	
+	: Internet Explorer 11 will no longer be supported after June 15, 2022.
+	
+Internet Explorer mode in Microsoft Edge
+	
+- Creating an Enterprise Mode Site List
+	:  edge://compat/SiteListManager
+
+Explain Microsoft Edge insider channel
+	: Stable - update in every 4 weeks
+	: Extended Stable - Enterprise one, updated in every 8 weeks
+	: Beta - update in every 4 weeks, and security and quality updates ship as needed
+	: Dev - update weekly
+	: canary - update daily 
+Note :- The Extended Stable channel is not a separate browser application. When this channel is selected, the existing Edge installation is changed to update on the even-numbered versions
+	
+Troubleshoot common Microsoft Edge issues
+	: Microsoft Edge loads page slowly - delete cahced and enable private browsing and diable any trackers.
+	: Some webpages display "needs internet explorer" - Use IE Mode to display that webpage.
+	: Users cannot find favorites or downloads previously used in Internet Explorer. - you can choose to import favorites from Internet Explorer.
+	: Text in reading pane is too small. - settings -> you can configure the font and size that you want to use for the reading pane.
+	: Ads are not blocked in Microsoft Edge. - install addblock extensions
+	: Webpages cannot be saved with Microsoft Edge. - Use external extension or Microsoft Edge does not have the same Save as feature as Internet Explorer 11. You can use the Web Note annotation tool to save the page to OneNote, or share the page in an email. Windows 10 also includes the Microsoft Print to PDF printer that you can use to save the webpage as a PDF file. In the reading view, you have the option of saving webpages and PDF files to your reading list.
+
+Check your knowledge 
+
+1. As the Desktop Administrator for Adventure Works Cycles, you've received several complaints from users that Microsoft Edge is loading pages very slowly. What common troubleshooting step should you instruct the users to do to try and resolve this issue? 
+A. Delete their cached files and enable InPrivate Browsing to disable any trackers
+B. Install an AdBlock extension from the Edge Add-ons catalog
+C. Implement Microsoft Edge extensions
+
+Ans A.
+
+2. As the Desktop Administrator for Wingtip Toys, you want to configure Microsoft Edge with group policy objects (GPOs). Doing so will enable you to add rules and settings for Microsoft Edge to the group policy Central Store in your Active Directory domain or the Policy Definition template folder on individual computers. What's the first thing you must do to configure Microsoft Edge with GPOs? 
+A. Ingest the administrative GPOs from Microsoft Intune
+B. Install the administrative templates
+C. Download the administrative GPOs from the Microsoft Store for Business
+
+Ans
+
+3. Which Microsoft Edge feature enables users to surf the web without collecting browsing history? 
+A. InPrivate browsing
+B. Tracking Protection
+C. Cached browsing
+
+Ans A.
+
+4. Lucerne Publishing wants to employ InPrivate Browsing to help protect data and privacy by preventing the browser from locally storing or retaining browsing history, temporary Internet files, form data, cookies, user names, and passwords. However, the company is concerned that some users may attempt to use InPrivate Browsing to conceal their tracks when browsing prohibited websites, or websites that do not pertain to work. What feature can Lucerne Publishing use to configure how it uses InPrivate Browsing and still provide full manageability control on users’ work devices? 
+A. Tracking Protection
+B. Tracking prevention templates from Microsoft Intune
+C. Group Policy
+
+Ans C
+
+5. Microsoft Edge provides a side panel that allows you to add pages or drag objects into the panel. This panel allows you to organize and share content that you find across the web. That's this feature? 
+A. Pinned tabs
+B. Pivot between profiles
+C. Collections
+
+Ans C.
