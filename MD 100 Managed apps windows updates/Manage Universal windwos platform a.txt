@@ -1,0 +1,29 @@
+Manage Universal windwos platform apps
+
+- Compare microsoft store and microsoft store for business
+	
+- Universal windows apps
+	: Microsoft store design to enables users to access and install universal windows apps.
+	:  Universal Windows apps are capable of running on multiple Windows devices, such as desktops, tablets, Xbox, HoloLens and IoT devices.
+	: The Microsoft Store now supports installation of Win32 apps as well as UWP apps.
+
+- Locating universal windows apps
+	: Not all applications are available in all geographic locations or in every language.
+
+- Microsoft store for business 
+	: It can customize.
+	: It consist two parts
+		1. Web portal hosted in microsoft Azure as a business store portal.
+		2. Microsoft Store app with an enterprise-managed private section that only employees of that enterprise can access.
+
+Managed access to microsoft store apps
+
+- Preventing users form installing applications from the microsoft store 
+	: To disable user access to the Microsoft store,
+		1. Run regedit.exe
+		2. Navigate to HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\WindowsStore (If there is no key then create it)
+		3. Create a new DWORD value named RemoveWindowsStore, and change value to 1.
+		4. Before this settings can take effect, you must restart the system.
+
+Configure assigned access to a single store app
+	
