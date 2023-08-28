@@ -1,0 +1,94 @@
+Configure and Managed file access
+Explore tools used for managing files and folders
+	
+- File explorer
+	: Creating files and folders.
+	: Accessing files and folders.
+	: Managing properties of files and folders.
+	: Searching for content in files and folders.
+	: Previewing contents of files and folders.
+
+- Windows PowerShell	
+- understand file and folder permissions
+	: You can configure file and folder permissions only on NTFS and ReFS volumes.
+	
+- Permissions example 
+	: Basic permissions - These are the most commonly used permissions. You most often will work with basic permissions and assign them to groups and users. Each basic permission is built from multiple special permissions.
+	: Adanced permissions - These permissions provide a finer degree of control compared to basic permissions. However, advanced permissions are more complex to document and manage than basic permissions.
+
+Understand permission inheritance 
+	: Explicit permissions - when you applied permission direct to file or folder it called as explicit permission.
+	: Inherited permissions - Files and folders typically are arranged in a nested structure, where a folder contains subfolders and files, and those subfolders contain files and folders.
+	
+- Inheritance for all objects 
+	: Make changes to a parent folder at which you set permissions explicitly. The file or folder will inherit these modified permissions.
+	: Choose not to inherit permissions from a parent object. You then can make changes to the permissions or remove a user or group from the permissions list of the file or folder.
+
+- Preventing inheritance 
+Note :- When you block permission inheritance, you have the option to convert inherited permissions into explicit permissions, or you can remove all inherited permissions. If you want to restrict a particular group or user, you can convert inherited permissions into explicit permissions to simplify configuration.
+	: Convert inherited permissions into explicit permissions on this object
+	: Remove all inherited permissions from this object
+	: Cancel	
+
+Implement conditions to limit file and folder access
+- group memebership rules
+	: Member of Any of the specified groups.
+	: Member of Each of the specified groups.
+	: Not Member of Any of the specified groups.
+	: Not Member of Each of the specified groups.
+
+Understand effective permissions 
+	: Each file or folder on the NTFS file system or ReFS has inherited or explicit permissions assigned, or both.
+Note :- When you combine permissions, Windows evaluates the Deny permissions before the Allow permissions that are set at the same level. Therefore, the Deny permission takes precedence and overrides the Allow permission set on the same level.
+	
+Use the effective access feature
+	: The Effective Access tab in Advanced Security Settings enables you to view the effective permissions for a user, group, or device account.
+	
+Examin permission when copying and moving files
+- Effect of copying files and folders
+	: When you copy a file or folder within a single volume, the copy of the folder or file inherits the permissions of the destination folder.
+	: When you copy a file or folder to a different volume, the copy of the folder or file inherits the permissions of the destination folder.
+	: When you copy a file or folder to a volume that doesn't support permissions (non-NTFS and non-ReFS), such as a FAT file system, the copy of the folder or file loses its permissions. This is because the target volume doesn't support permissions.
+	
+Note :- When you copy a file or folder within a single volume or between volumes, you must have the Read permission for the source folder and the Write permission for the destination folder.
+	
+- Effects of moving files and folders
+	: If you move a file or folder within the same volume, only the pointer(s) are updated, and data isn't moved. 
+	: When you move a file or folder to a different volume, the folder or file inherits the destination folder’s permissions, but it doesn't retain the explicitly assigned or inherited permissions from the source location. 
+	
+Knowledge Check
+
+1. You're working on a sales spreadsheet. Due to the sensitive nature of the file, it has explicitly assigned permissions. You decide to move the file to a different volume. What's the effect of this move on the file's permissions? 
+A. The file inherits the destination folder's permissions, but it doesn't retain the explicitly assigned permissions
+B. The file inherits the destination folder's permissions and it retains the explicitly assigned permissions
+C. The file loses all permissions
+
+Ans A = When you move a file or folder to a different volume, the folder or file inherits the destination folder’s permissions, but it does not retain the explicitly assigned or inherited permissions from the source location. When you move a folder or file between volumes, Windows copies the folder or file to the new location and deletes the original file from the source location.
+
+2. You're an IT Support professional for a medical facility. One of the physicians needs to move a file to a different folder on the file server. You determine that the folders are on the same volume. What permissions, at a minimum, must the physician have to move the file? 
+A. Modify for the source file and Write for the destination folder
+B. Read for the source file and Write for the destination folder
+C. Read for the source file and Full control for the destination folder
+
+Ans A = When you move a file or folder within a volume or between volumes, you must have both the Write permission for the destination folder and the Modify permission for the source file or folder. You require the Modify permission to move a folder or file because Windows deletes the folder or file from the source folder after it copies it to the destination folder.
+
+3. What are effective permissions? 
+A. The permissions on a file or folder that are effective on the date the file or folder is created
+B. Permissions that are explicitly assigned to a file or folder
+C. Permissions determined by combining the user and group permissions and then comparing them to the selected user's permissions
+
+Ans C = Each file or folder on the NTFS file system or ReFS has inherited or explicit permissions assigned, or both. Windows determines effective permissions by combining the user and group permissions and comparing them to the permissions of the selected user.
+
+4. Which basic permission on a folder allows groups or users to delete a file in that folder, regardless of the permissions that protect the file? 
+A. Modify
+B. Full control
+C. Delete
+
+Ans  B = Groups or users that have the Full Control permission on a folder can delete any files in that folder, regardless of the permissions that protect the file.
+
+5. Sally is a member of the HR security group. You want to determine whether Sally can access the HR folder on an NTFS drive, so you open the Advanced Security Settings feature on the HR folder. From this feature, you can determine the permissions assigned to Sally and the effective access permissions Sally and the HR group have on the folder. What else can you determine from the Advanced Security Settings feature on the HR folder? 
+A. The permissions assigned to the HR group
+B. The effective access to the device
+C. How many times Sally has tried to access the folder
+
+Ans B =  The Effective Access tab in the Advanced Security Settings for the HR folder enables you to view the effective permissions for a user, group, or device account.
