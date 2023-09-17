@@ -10,7 +10,7 @@ Explore the windows client servicing channels
 	: General availability channel - feature updates are available as soon as Microsoft releases them.
 	: Long-Term Servicing Channel - control medical equipment, point-of-sale systems, and ATMs—often require a longer servicing option because of their purpose.
 
-Examine the windows update options
+Examine the windows update options.
 - servicing tools	
 	: Windows update
 	: Windows server update services (WSUS)
