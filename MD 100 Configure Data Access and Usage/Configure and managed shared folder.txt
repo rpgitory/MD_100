@@ -1,0 +1,43 @@
+Configure and managed shared folders
+	
+Explore shared folders
+	: When share a folder that means you make its content available in network for multiple user.	
+	: Windows allows you to right-click a file in a user's profile, and then select Share with. However, this will share the Users folder, in which all user profiles are stored.
+
+- Shared folders permissions
+	: Read - Read only
+	: Change - Modify, delete, create but can't modify permission. includes read permission
+	: Full Control - Can do anything they want
+
+- View shared folders
+- Connecting to a shared folder
+	: Users can connect to a shared folder most commonly over the network by using its Universal Naming Convention (UNC) address.
+	: The UNC address contains the name of the computer that is hosting the folder and the shared folder name, separated by a backward slash (\), and preceded by two backward slashes (\\).
+	: Ex  \\LON-CL1.Adatum.com\Sales. where LON-CL1.Adatum.com is domain name and sales is folder name
+
+- Ways to share folder 
+	: The Shared Folders snap-in
+	: File Explorer
+	: A command prompt
+	: Windows PowerShell cmdlets
+
+Examine methods available for connecting to share folders
+- Sharing folders by using the shared folders snap-in
+	: Shared folder shanp-in used to managed computer files centrally.
+
+- Sharing folders by using File explorer
+	: Using the Share with option from the shortcut menu or ribbon (also called Network File and Folder Sharing on the Sharing tab).
+	: Selecting Advanced security from the Sharing tab.
+
+- Usig the share with option (Network File and Folder Sharing)
+	: The Share with option is a quick and easy way to share a folder. When you right-click a folder, and then select Share with, you see a submenu that allows you to stop sharing the folder or share the folder with specific people. 
+	: After you selecting user or group with whom you want to share it, then you can set a permissions to them.
+	: You can’t share the same folder multiple times by using Network File and Folder Sharing.
+
+- Using Advanced Sharing
+	: Advanced Sharing provides several more configuration options compared to Network File and Folder Sharing.
+	: When you use Advanced Sharing, you're configuring only share-folder permissions. You must configure file permissions separately.
+	: you must be careful when you do this to ensure you're setting the permissions exactly as you require. 
+
+- Sharing folders by using the command line
+	: 
